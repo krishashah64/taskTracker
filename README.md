@@ -1,7 +1,5 @@
-Task Tracker 
-
 Snapshots - 
-1. TaskTracker UI - ![image](https://github.com/krishashah64/taskTracker/assets/48850101/5f3a0208-02a9-4553-8ae0-287079284195)
+1. UI - ![image](https://github.com/krishashah64/taskTracker/assets/48850101/5f3a0208-02a9-4553-8ae0-287079284195)
 2. Adding details of new Task -![image](https://github.com/krishashah64/taskTracker/assets/48850101/45e68116-3b87-40c7-a363-d4e77b20c86e)
 3. New task is displayed below the existing tasks - ![image](https://github.com/krishashah64/taskTracker/assets/48850101/1433b35c-5871-4ec2-ad17-0b494d3322ca)
 4. Validations -
