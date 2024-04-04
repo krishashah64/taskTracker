@@ -9,6 +9,15 @@ const taskList = [
 ];
 
 document.addEventListener("DOMContentLoaded", function() {
+
+	let today = new Date();
+
+    // Format the date as "YYYY-MM-DD"
+    let formattedDate = today.toISOString().split('T')[0];
+
+    // Set the value of the date input field
+    document.getElementById("task_date").min = formattedDate;
+
 	let allTaskList =  document.querySelector(".display-tasks");
 
 	taskList.forEach(function (task) {
@@ -84,19 +93,15 @@ document.addEventListener("DOMContentLoaded", function() {
 		if (!regex.test(dateInput)) {
 			return false;
 		}
-	
-		// Checks if the date is a valid date
-		let date = new Date(dateInput);
-		if (isNaN(date.getTime())) {
-			return false;
-		}
+		
+		let newdate = new Date(dateInput).setHours(0,0,0,0);
 
-		let currentDate = new Date();
+		let currentDate = new Date().setHours(0, 0, 0, 0);
+
     	// Checks if previous date is selected.
-		if (date < currentDate) {
+		if (newdate < currentDate ) {
 			return false; 
 		}
-	
 		return true;
 	}
 })
